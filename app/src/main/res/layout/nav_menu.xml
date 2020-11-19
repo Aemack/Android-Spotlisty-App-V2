@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabMode="fixed"
+        app:tabRippleColor="@color/spot_green">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/user_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User" />
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/generate_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/genre_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genre" />
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/playlists_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Playlists" />
+
+    </com.google.android.material.tabs.TabLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
